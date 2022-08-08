@@ -12,6 +12,10 @@ while (number <= 19) {
 
 let array = [34, 62, 74, 27, 28, 83, 83, 72, 84]
 const findLength = array.length;
-array[4] = 120;
+array[3] = 120;
+console.log(array);
+array.push(230, 500)
+console.log(array);
+array.pop()
 console.log(array);
 // console.log(findLength);
