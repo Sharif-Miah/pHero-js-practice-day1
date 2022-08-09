@@ -10,8 +10,26 @@ const myFeet = 5.6;
 const result = feetToInch(myFeet);
 console.log(result.toFixed(2));
 
+const fatherFeet = 5.8;
+const result1 = feetToInch(fatherFeet);
+console.log(result1);
+
+const brotherFeet = 6;
+const result2 = feetToInch(brotherFeet);
+console.log(result2);
+
+
+
 // ২. একদম ফাংশন এর নাম হুবহু centimeterToMeter নাম দিয়ে একটা ফাংশন লিখবে। এই ফাংশনে ইনপুট হিসাবে কেউ সেন্টিমিটার দিবে আর সেই সেন্টিমিটার কে মিটার এ কনভার্ট করে রেজাল্ট রিটার্ন করবে।
 
+function centimeterToMeter(centeMeter) {
+    const toMeter = centeMeter / 100;
+    return toMeter;
+}
+
+const bantiToMadhabdi = 5000;
+const totalDistance = centimeterToMeter(bantiToMadhabdi);
+console.log(totalDistance);
 
 
 
