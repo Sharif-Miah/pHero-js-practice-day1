@@ -38,15 +38,34 @@ console.log(totalDistance);
 // এইবার ভালো করে খেয়াল করো।
 
 // প্রথম বই ছাপানোর জন্য পৃষ্ঠা লাগবে ১০০ টা
-
 // সেকেন্ড বই ছাপানোর জন্য পৃষ্ঠা লাগবে ২০০ টা
-
 // তৃতীয় বই ছাপানোর জন্য পৃষ্ঠা লাগবে ৩০০ টা
-
 
 
 // এখন তোমার কাজ হচ্ছে paperRequirements নামক ফাংশন লিখে ফেলা যাতে। সেই ফাংশনকে কল করে কোন বই এর কত কপি লাগবে বলে দিবে প্যারামিটার হিসেবে। আর ফাংশন হিসাব করে বলে দিবে তোমার সর্বমোট কতপৃষ্ঠা কাগজ লাগবে।
 // উত্তর হিসেবে সংখ্যা রিটার্ন করবে।
+
+function paperRequirements(bookQun1, bookQun2, bookQun3) {
+
+    const firstBookPage = 100;
+    const secondBookPage = 200;
+    const thirdBookPage = 300
+
+    const firstBookNeed = bookQun1 * firstBookPage;
+    console.log('first Book: ', firstBookNeed);
+    const secondBookNeed = bookQun2 * secondBookPage;
+    console.log('second Book: ', secondBookNeed);
+    const thirdBookNeed = bookQun3 * thirdBookPage;
+    console.log('third Book: ', thirdBookNeed);
+
+    const result = firstBookNeed + secondBookNeed + thirdBookNeed;
+
+    return result;
+
+}
+
+const neededPage = paperRequirements(5, 3, 2)
+console.log('Total Pages Need: ', neededPage);
 
 
 
